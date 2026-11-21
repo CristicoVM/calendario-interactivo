@@ -1,0 +1,28 @@
+# Coordenadas en píxeles reales del dispositivo (ver: adb shell wm size).
+# Valores de ejemplo para 2400x1080 en horizontal. CALIBRA con `dls.sh shot`.
+# Copia este archivo como dls.conf y ajusta.
+
+# Serial del dispositivo (vacío = el único conectado). Ej: 127.0.0.1:5555
+DLS_SERIAL=""
+
+# Joystick virtual: centro y radio del recorrido
+JOY_X=330
+JOY_Y=820
+JOY_R=150
+
+# Botones (centro)
+PASS_X=1880
+PASS_Y=930
+SHOOT_X=2180
+SHOOT_Y=800
+THROUGH_X=1960
+THROUGH_Y=690
+SPRINT_X=1700
+SPRINT_Y=780
+
+# Botón de pausa (esquina superior)
+PAUSE_X=1200
+PAUSE_Y=60
+
+# Distancia en píxeles del gesto "bombeado" (deslizar hacia arriba desde el botón)
+LOB_DY=220
