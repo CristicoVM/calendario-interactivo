@@ -8,8 +8,8 @@ CONF="$DIR/dls.conf"
 # shellcheck source=/dev/null
 source "$CONF"
 
-ADB=(adb)
-[[ -n "${DLS_SERIAL:-}" ]] && ADB=(adb -s "$DLS_SERIAL")
+ADB=("${ADB_BIN:-adb}")
+[[ -n "${DLS_SERIAL:-}" ]] && ADB+=(-s "$DLS_SERIAL")
 SHOT="${DLS_SHOT:-/tmp/dls_screen.png}"
 
 die() { echo "error: $*" >&2; exit 1; }

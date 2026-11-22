@@ -60,10 +60,13 @@ Mapa por defecto de DLS (revisar en Ajustes → Controles, puede variar):
 | Control | En ataque | En defensa |
 |---|---|---|
 | Joystick (izquierda) | Mover / regatear | Mover |
-| `PASS` | Pase al pie (tocar) | Cambiar de jugador |
-| `SHOOT` | Tiro (mantener = potencia) | Entrada / barrida (deslizar) |
-| `THROUGH` | Pase al hueco / centro | Presión / segundo defensor |
+| `PASS` = `A` (abajo-derecha) | Pase al pie / chute fuerte | Entrada deslizante |
+| `SHOOT` = `B` (izquierda de A) | Tiro (mantener = potencia) / chute raso | Presión (mantener) |
+| `THROUGH` = `C` (encima de A) | Pase al hueco / chute elevado | Cambiar de jugador |
 | `SPRINT` (si existe en tu layout) | Correr | Correr |
+
+En defensa usa los alias por letra para no confundirte: `tap C` cambia de
+jugador, `hold B 500` presiona y `tap A` es la barrida.
 
 Gestos útiles: deslizar desde el botón de tiro/pase hacia arriba = pase/tiro
 **bombeado**; deslizar con curva = **efecto**; doble toque en pase al hueco =
